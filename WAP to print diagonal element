@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main(){
+int m;
+cout<<"enter the row";
+cin>>m;
+int n;
+cout<<"enter the column";
+cin>>n;
+int ar[m][n];
+//taking input
+for(int i=0;i<m;i++){//i=rows
+        for(int j=0;j<n;j++){//j=column
+            cin>>ar[i][j];
+        }
+        cout<<endl;
+    }
+    //printing output
+     for(int i=0;i<m;i++){//i=rows
+        for(int j=0;j<n;j++){//j=column
+           if(i==j || (i+j)%2==0) cout<<ar[i][j];
+        
+        else cout<<"*";
+    }
+    cout<<endl;
+     }
+}
